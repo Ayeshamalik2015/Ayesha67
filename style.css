@@ -1,0 +1,460 @@
+* {
+
+    box-sizing: border-box;
+
+}
+
+body {
+
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #111;
+
+    background-image: radial-gradient(circle, #333 1px, transparent 1px);
+
+    background-size: 30px 30px;
+
+    color: white;
+
+}
+
+header {
+
+    text-align: center;
+
+    padding: 40px;
+
+    background: linear-gradient(135deg, #111, #e00000);
+
+    border-bottom: 5px solid white;
+
+}
+
+h1 {
+
+    font-family: Arial, sans-serif;
+
+    font-size: 45px;
+
+    font-weight: bold;
+
+    text-shadow: 4px 4px 5px black;
+
+    text-transform: uppercase;
+
+}
+
+h2 {
+
+    font-size: 30px;
+
+    text-shadow: 2px 2px 3px black;
+
+}
+
+h3 {
+
+    font-size: 22px;
+
+}
+
+p {
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+}
+
+footer a {
+
+    text-decoration: underline;
+
+}
+
+nav {
+
+    margin-top: 20px;
+
+}
+
+nav a {
+
+    display: inline-block;
+
+    margin: 8px;
+
+    padding: 12px 18px;
+
+    color: white;
+
+    text-decoration: none;
+
+    background-color: #222;
+
+    border: 2px solid white;
+
+    border-radius: 10px;
+
+}
+
+nav a:hover {
+
+    background-color: #e00000;
+
+    transform: scale(1.1);
+
+}
+
+button:hover {
+
+    background-color: #ff4444;
+
+    transform: scale(1.1);
+
+}
+
+main {
+
+    width: 90%;
+
+    max-width: 1000px;
+
+    margin: 30px auto;
+
+}
+
+section {
+
+    background-color: rgba(255, 255, 255, 0.08);
+
+    padding: 25px;
+
+    margin-bottom: 30px;
+
+    border: 2px solid #555;
+
+    border-radius: 15px;
+
+}
+
+.intro {
+
+    background-color: rgba(220, 0, 0, 0.15);
+
+}
+
+#tips {
+
+    border-color: #ff3333;
+
+}
+
+section > h2 {
+
+    color: #ffcc00;
+
+}
+
+h2 + p {
+
+    color: #ddd;
+
+}
+
+ul li:nth-child(odd) {
+
+    color: #ffcc00;
+
+}
+
+ul li:nth-child(even) {
+
+    color: #ff7777;
+
+}
+
+.intro p::first-letter {
+
+    font-size: 35px;
+
+    font-weight: bold;
+
+    color: #ff3333;
+
+}
+
+li {
+
+    margin: 8px;
+
+    font-size: 18px;
+
+}
+
+dt {
+
+    font-weight: bold;
+
+    color: #ffcc00;
+
+    margin-top: 15px;
+
+}
+
+dd {
+
+    margin-bottom: 10px;
+
+}
+
+img {
+
+    max-width: 100%;
+
+    border: 5px solid white;
+
+    border-radius: 15px;
+
+    box-shadow: 5px 5px 15px black;
+
+}
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background-color: #181818;
+
+}
+
+th {
+
+    background-color: #e00000;
+
+    color: white;
+
+    padding: 15px;
+
+}
+
+td {
+
+    padding: 15px;
+
+    text-align: center;
+
+}
+
+tr:nth-child(even) {
+
+    background-color: #292929;
+
+}
+
+audio,
+
+video,
+
+iframe {
+
+    max-width: 100%;
+
+    margin-bottom: 25px;
+
+}
+
+aside {
+
+    padding: 20px;
+
+    margin-bottom: 30px;
+
+    background-color: #242424;
+
+    border-left: 8px solid #ffcc00;
+
+}
+
+fieldset {
+
+    border: 3px solid #e00000;
+
+    border-radius: 15px;
+
+    padding: 25px;
+
+}
+
+legend {
+
+    padding: 8px 15px;
+
+    background-color: #e00000;
+
+    border-radius: 10px;
+
+    font-weight: bold;
+
+}
+
+label {
+
+    font-weight: bold;
+
+}
+
+input,
+
+select {
+
+    padding: 10px;
+
+    margin: 5px;
+
+    border-radius: 8px;
+
+    border: 2px solid #777;
+
+}
+
+button {
+
+    padding: 12px 20px;
+
+    margin: 5px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background-color: #e00000;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+}
+
+output {
+
+    display: inline-block;
+
+    padding: 15px;
+
+    background-color: #222;
+
+    border: 2px solid #ffcc00;
+
+    border-radius: 10px;
+
+}
+
+a {
+
+    color: #ffcc00;
+
+    font-weight: bold;
+
+}
+
+a:hover {
+
+    color: white;
+
+}
+
+.game-section {
+
+    width: 100%;
+
+    padding: 40px;
+
+    border: 5px solid #e00000;
+
+    margin-bottom: 30px;
+
+    position: relative;
+
+}
+
+.controller {
+
+    position: relative;
+
+    left: 20px;
+
+    padding: 20px;
+
+    width: 100px;
+
+    font-size: 50px;
+
+    text-align: center;
+
+    transform: rotate(-10deg);
+
+    animation-name: gameController;
+
+    animation-duration: 3s;
+
+    animation-iteration-count: infinite;
+
+    animation-direction: alternate;
+
+}
+
+@keyframes gameController {
+
+    from {
+
+        transform: translateX(-150px) rotate(-10deg);
+
+    }
+
+    to {
+
+        transform: translateX(150px) rotate(10deg);
+
+    }
+
+}
+
+footer {
+
+    text-align: center;
+
+    padding: 30px;
+
+    background: linear-gradient(90deg, #111, #e00000);
+
+}
+
+@media (max-width: 600px) {
+
+    h1 {
+
+        font-size: 30px;
+
+    }
+
+    main {
+
+        width: 95%;
+
+    }
+
+    table {
+
+        font-size: 14px;
+
+    }
+
+}
+ 
